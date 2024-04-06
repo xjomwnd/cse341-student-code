@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Database connection URI
-const DB_URI = ''; 
+const DB_URI = 'mongodb+srv://mwishodb:7Mwathani77!@cluster0.r2xw8xx.mongodb.net/'; 
 
 // Connect to MongoDB
 mongoose.connect(DB_URI);
