@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Database connection URI
-const DB_URI = 'mongodb+srv://finalproject:7Thayowaku77@cluster0.hbwhk.mongodb.net/cse341-Final'; 
+const DB_URI = ''; 
 
 // Connect to MongoDB
 mongoose.connect(DB_URI);
