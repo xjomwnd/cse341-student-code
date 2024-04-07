@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Aggregator Site Plan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato">
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        :root {
+            /* Change the values below to your colors from your palette */
+            --primary-color: #3F729B;
+            --secondary-color: #333333;
+            --accent1-color: #F67280;
+            --accent2-color: #F8B195;
+            --accent3-color: #FFD166;
+
+            /* Change the values below to your chosen font(s) */
+            --heading-font: "IM Fell French Canon SC";
+            --paragraph-font: Lato, Helvetica, sans-serif;
+
+            /* These colors below should be chosen from among your palette colors above */
+            --headline-color-on-white: black; /* headlines on a white background */
+            --headline-color-on-color: white; /* headlines on a colored background */
+            --paragraph-color-on-white: black; /* paragraph text on a white background */
+            --paragraph-color-on-color: white; /* paragraph text on a colored background */
+            --paragraph-background-color: black;
+            --nav-link-color: #396e94;
+            --nav-background-color: #e7c24f;
+            --nav-hover-link-color: #e7c24f;
+            --nav-hover-background-color: #396e94;
+        }
+
+        /*  Look around below...but DON'T CHANGE ANYTHING! */
+        html {
+            background-color: #d8d8d8;
+        }
+        body {
+            max-width: 1024px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 1em;
+        }
+        img {
+            max-width: 100%;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--heading-font);
+            color: var(--headline-color-on-white);
+        }
+        header {
+            padding: 1em;
+            text-align: center;
+            color: var(--paragraph-color-on-color);
+            background-color: var(--nav-link-color);
+        }
+        header > h1,
+        header > h2 {
+            color: var(--headline-color-on-color);
+        }
+
+        .subtitle {
+            padding: 0.5rem;
+            background-color: var(--nav-link-color);
+        }
+
+        p {
+            font-family: var(--paragraph-font);
+            color: var(--paragraph-color);
+            padding: 1em;
+        }
+
+        .colors {
+            width: 100%;
+            min-width: 350px;
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+        .colors th {
+            background-color: #999;
+        }
+        .colors td {
+            width: 20%;
+            height: 3em;
+        }
+
+        .primary {
+            background-color: var(--primary-color);
+        }
+        .secondary {
+            background-color: var(--secondary-color);
+        }
+        .accent1 {
+            background-color: var(--accent1-color);
+        }
+        .accent2 {
+            background-color: var(--accent2-color);
+        }
+        .accent3 {
+            background-color: var(--accent3-color);
+        }
+
+        p.colored {
+            background-color: var(--paragraph-background-color);
+            color: var(--paragraph-color-on-color);
+        }
+
+        nav {
+            background-color: var(--nav-background-color);
+            line-height: 3em;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        nav > ul {
+            list-style-type: none;
+            display: flex;
+        }
+        nav a {
+            padding: 1em;
+            min-width: 70px;
+        }
+        nav a:link,
+        nav a:visited {
+            color: var(--nav-link-color);
+        }
+        nav a:hover {
+            color: var(--nav-hover-link-color);
+            background-color: var(--nav-hover-background-color);
+        }
+
+        .sitemap {
+            display: grid;
+            justify-content: center;
+
+            grid-template-columns: repeat(6, 15%);
+            grid-template-rows: 3em 1.5em 1.5em 3em;
+            grid-template-areas:
+                ". . home home . ."
+                ". . . top . ."
+                ". left left right right ."
+                "page2 page2 . . page3 page3";
+        }
+        .sitemap > div {
+            text-align: center;
+        }
+        .sm-home {
+            grid-area: home;
+            background-color: #999;
+            line-height: 3em;
+        }
+        .sm-page2 {
+            grid-area: page2;
+            background-color: #999;
+            line-height: 3em;
+        }
+        .sm-page3 {
+            grid-area: page3;
+            background-color: #999;
+            line-height: 3em;
+        }
+
+        .top {
+            grid-area: top;
+            border-left: 1px solid;
+        }
+
+        .left {
+            grid-area: left;
+            border-top: 1px solid;
+            border-left: 1px solid;
+        }
+
+        .right {
+            grid-area: right;
+            border-top: 1px solid;
+            border-right: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Media Aggregator Site Plan</h1>
+    </header>
+
+    <div class="sitemap">
+        <div class="sm-home">Home</div>
+        <div class="sm-page2">Page 2</div>
+        <div class="sm-page3">Page 3</div>
+        <div class="top"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <!-- Add your content here -->
+<div>
+    <h1>Social Media Aggregator Site Plan</h1>
+    <h2>Homepage:</h2>
+    <ul>
+        <li>Welcome message and brief explanation of the service.</li>
+        <li>Sign-up and log-in options for users.</li>
+        <li>Featured content or trending topics section.</li>
+        <li>avigation menu to access different sections of the site.</li>
+        <li>Navigation menu to access different sections of the site.</li>
+    </ul>
+    <h2>User Dashboard:</h2>
+    <ul>
+        <li>Personalized feed displaying aggregated content from various social media platforms.</li>
+        <li>Profile management options (edit profile, change password, etc.).</li>
+        <li>Ability to connect/disconnect social media accounts.</li>
+        <li>Customization options for feed preferences.</li>
+    </ul>
+    <h2>Explore Section:</h2>
+    <ul>
+        <li>Search functionality to find specific topics or users across social media platforms.</li>
+        <li>Trending topics or hashtags section.</li>
+        <li>Featured accounts or influencers.</li>
+    </ul>
+    <h2>Content Details Page:</h2>
+    <ul>
+        <li>Detailed view of individual posts from social media platforms.</li>
+        <li>Like, share, and comment options.</li>
+        <li>Ability to save posts for later viewing.</li>
+        <li>Related posts or suggested content.</li>
+    </ul>
+    <h2></h2>
+    <ul>
+        <li>Notifications:</li>
+        <li>Alerts for new posts, mentions, or interactions.</li>
+        <li>Notification settings customization.</li>
+    </ul>
+    <h2>Settings:</h2>
+    <ul>
+        <li>General account settings (email preferences, privacy settings, etc.).</li>
+        <li>Connected accounts management.</li>
+        <li>Notification preferences</li>
+    </ul>
+    <h2>Help and Support:</h2>
+    <ul>
+        <li>FAQs section.</li>
+        <li>Contact form for user inquiries or support requests.</li>
+        <li>Links to resources or tutorials.</li>
+    </ul>
+    <h2></h2>
+    <ul>
+        <li> Footer:</li>
+        <li>About Us: Information about the company or service.</li>
+        <li>Terms of Service and Privacy Policy.</li>
+        <li>Social media links for sharing and following.</li>
+    </ul>
+</div>
+<div>
+    <h1>Audience:</h1>
+    <h2>Social Media Enthusiasts:</h2>
+    <li>Individuals who actively engage with multiple social media platforms.</li>
+    <li>They may be interested in discovering trending topics, following influencers, and staying updated with the latest content.</li>
+   <h2>Content Creators:</h2>
+    <li>Bloggers, vloggers, photographers, and other creators who produce content across various social media channels.</li>
+    <li>They may use the aggregator to monitor their own content's performance, engage with their audience, and discover collaboration opportunities.
+        </li>
+    <h2>Businesses and Brands:</h2>
+    <li>Companies and brands seeking to monitor their online presence and track mentions across different social media platforms.</li>
+    <li>They may utilize the aggregator for brand monitoring, competitor analysis, and to identify market trends.</li>
+    <h2>Digital Marketers:</h2>
+    <li>Professionals involved in digital marketing strategies, social media management, and community engagement.</li>
+    <li>They may leverage the aggregator for content curation, social listening, and gathering insights to optimize their marketing campaigns.</li>
+    <li></li>
+</div>
+<div>
+    <h1>Purpose:</h1>
+    <h2>Centralized Content Consumption:</h2>
+    <li>The primary purpose of the Social Media Aggregator is to provide users with a centralized platform to access and consume content from various social media platforms simultaneously.</li>
+    <h2>Streamlined Engagement:</h2>
+    <li>It aims to streamline engagement by allowing users to interact with posts, engage with their audience, and manage multiple social media accounts efficiently from one dashboard.
+    </li>
+</div>
+    <div>
+            <h2>Content Discovery and Trend Monitoring:</h2>
+            <li>The aggregator facilitates content discovery by curating trending topics, 
+                hashtags, and influencer content across different social media channels. 
+                Users can stay informed about popular discussions and emerging trends in 
+                their areas of interest.<li>
+            <li>It serves as a tool for analytics and insights, providing users with data on engagement metrics, audience demographics, and content performance across various social media platforms.
+            </li>
+    </div>
+    <div>
+        <h2> Efficient Brand Monitoring:</h2>
+        <li>Businesses and brands can use the aggregator to monitor their online presence, track mentions, and manage reputation across different social media channels in real-time.</li>
+    
+        <h2>Personalized Experience:</h2>
+        <li>The aggregator offers a personalized experience by allowing users to customize their content feeds, preferences, and notifications according to their interests and requirements.</li>
+    </div>
+<div>
+    <h1>AIM</h1>
+    <p>By catering to the needs of its diverse audience, the Social Media Aggregator aims to enhance content consumption, engagement, and social media management, ultimately empowering users to navigate the digital landscape more effectively.</p>
+</div>
+<div>
+    <h3>Color Palette</h3>
+<p>Palette URL:
+  <a href="https://coolors.co/1a1423-372549-afc1d6-774c60-b75d69" target="_blank">https://coolors.co/</a>
+</p>
+<table class="colors">
+  <tr>
+    <th>Primary</th>
+    <th>Secondary</th>
+    <th>Accent 1</th>
+    <th>Accent 2</th>
+    <th>Accent 3</th>
+  </tr>
+  <tr>
+    <td class="primary">#1a1423</td>
+    <td class="secondary">#372549</td>
+    <td class="accent1">#afc1d6</td>
+    <td class="accent2">#774c60</td>
+    <td class="accent3">#b75d69</td>
+  </tr>
+</table>
+<h3>Typography</h3>
+<h4>Heading Font: Encode Sans Condensed, Rajdhani, Special Elite.</h4>
+<h4>Paragraph Font: Trirong.</h4>
+<h2 class="subtitle">Wireframes</h2>
+<h3>Home</h3>
+<img src="./images/Screenshot_1.png"/>
+<img src="./images/Screenshot_2.png"/>
+<!--<img src="./imgs/exported-freehand.png.png"/>-->
+</div>
+<div>
+    <h1>Wireframes</h1>
+    <h3>large screen</h3>
+    <img src="images/Fullscreen.jpg"/>
+    <h3>Medium screen</h3>
+    <img src="images/Tablets.jpg"/>
+    <h3>Phone sceen</h3>
+    <img src="images/Phone Screen_5.jpg"/>
+</div>
+</body>
+</html>
