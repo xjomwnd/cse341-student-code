@@ -1,22 +1,26 @@
-/* eslint-disable no-undef */
-// Function to fetch data from the API endpoint and display the result
-async function fetchData() {
+/ script.js
+
+// Function to handle form submission
+document.getElementById('endpoint-form').addEventListener('submit', async function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form values
+    const endpoint = document.getElementById('endpoint').value;
+    const method = document.getElementById('method').value;
+    const body = document.getElementById('body').value;
+
+    // Make HTTP request using Axios
     try {
-        const response = await axios.get('https://api.example.com/data'); // Replace with your API endpoint URL
-        const data = response.data;
+        const response = await axios({
+            method: method,
+            url: endpoint,
+            data: body ? JSON.parse(body) : undefined,
+        });
 
-        // Display the result in the HTML
-        const resultElement = document.getElementById('result');
-        resultElement.innerHTML = `<h2>API Data</h2>
-                                    <p>${JSON.stringify(data)}</p>`;
+        // Display response in result div
+        document.getElementById('result').innerText = JSON.stringify(response.data);
     } catch (error) {
-        console.error('Error fetching data:', error);
-        // Display error message in the HTML
-        const resultElement = document.getElementById('result');
-        resultElement.innerHTML = `<h2>Error</h2>
-                                    <p>Failed to fetch data from the API.</p>`;
+        // Display error message in result div
+        document.getElementById('result').innerText = 'Error: ' + error.message;
     }
-}
-
-// Call the fetchData function when the page loads
-window.onload = fetchData;
+});
