@@ -1,4 +1,3 @@
-const validator = require('../models/likeDislike');
 // validator.js
 const validator = {
     // Function to validate email format
