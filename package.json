@@ -25,7 +25,8 @@
     "mongoose": "^8.3.0",
     "passport-google-oauth20": "^2.0.0",
     "swagger-ui-express": "^4.3.0",
-    "validate": "^5.2.0"
+    "validate": "^5.2.0",
+    "validator": "^13.11.0"
   },
   "devDependencies": {
     "eslint": "^8.10.0",
