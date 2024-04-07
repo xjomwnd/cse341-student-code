@@ -1,21 +1,24 @@
-// validator.js
-const validator = {
-    // Function to validate email format
-    validateEmail: function(email) {
-      // Regular expression for email validation
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(email);
-    },
-    
-    // Function to validate password length
-    validatePassword: function(password) {
-      // Password length should be at least 8 characters
-      return password.length >= 8;
-    },
-  
-    // Add more validation functions as needed...
-  };
-  
-  // Export the validator module
-  module.exports = validator;
+// validatorjs.js
+const Validator = require('validatorjs');
+
+// Example usage
+const data = {
+  email: 'example@example.com',
+  password: 'password123',
+};
+
+const rules = {
+  email: 'required|email',
+  password: 'required|min:8',
+};
+
+const validation = new Validator(data, rules);
+
+if (validation.passes()) {
+  console.log('Validation passed');
+} else {
+  console.log('Validation failed');
+  console.log(validation.errors.all());
+}
+
   
