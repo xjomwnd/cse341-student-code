@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Endpoint Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>API Endpoint Tester</h1>
+    
+    <div id="form-container">
+        <h2>Test Endpoint</h2>
+        <form id="endpoint-form">
+            <label for="endpoint">Endpoint URL:</label><br>
+            <input type="text" id="endpoint" name="endpoint" value="https://api.example.com"> <!-- Default value for demonstration -->
+            <br>
+            <label for="method">Request Method:</label><br>
+            <select id="method" name="method">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+            <br>
+            <label for="body">Request Body:</label><br>
+            <textarea id="body" name="body"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Import Axios library -->
+    <script src="script.js"></script> <!-- Import JavaScript file -->
+</body>
+</html>
