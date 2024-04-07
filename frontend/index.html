@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/styles.css" />
-    
     <!-- Add your CSS stylesheets and JavaScript files here -->
+    <script>
+        fetch('http://localhost:8080/api/posts')
+            .then(response => response.json())
+            .then(data => {
+                // Process the data and update the UI
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>    
 </head>
 <body>
     <header>
