@@ -8,42 +8,6 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Add your CSS stylesheets and JavaScript files here -->
-    <script>
-        fetch('http://localhost:8080/api/posts')
-            .then(response => response.json())
-            .then(data => {
-                // Process the data and update the UI
-                console.log(data);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-    </script>  
-    <script>
-        // Add event listeners to the buttons
-        document.getElementById('likeBtn').addEventListener('click', function() {
-            // Send a request to the backend to handle the like action
-            // You can use AJAX or Fetch API to send the request
-            // Example: fetch('/like', { method: 'POST', ... })
-            console.log('Like button clicked');
-        });
-
-        document.getElementById('commentBtn').addEventListener('click', function() {
-            // Send a request to the backend to handle the comment action
-            console.log('Comment button clicked');
-        });
-
-        document.getElementById('shareBtn').addEventListener('click', function() {
-            // Send a request to the backend to handle the share action
-            console.log('Share button clicked');
-        });
-
-        document.getElementById('bookmarkBtn').addEventListener('click', function() {
-            // Send a request to the backend to handle the bookmark action
-            console.log('Bookmark button clicked');
-        });
-    </script>  
 </head>
 <body>
     <header>
@@ -69,7 +33,7 @@
     </header>
     <div class="search-bar">
         <input type="text" placeholder="Search...">
-        <button>Search</button>
+        <button id="searchBtn">Search</button>
     </div>
     <!-- Main Content Area -->
     <main>
@@ -88,10 +52,10 @@
 
                 <!-- Post interaction buttons -->
                 <div class="interactions">
-                    <button>Like</button>
-                    <button>Comment</button>
-                    <button>Share</button>
-                    <button>Bookmark</button>
+                    <button id="likeBtn">Like</button>
+                    <button id="commentBtn">Comment</button>
+                    <button id="shareBtn">Share</button>
+                    <button id="bookmarkBtn">Bookmark</button>
                 </div>
             </div>
         </section>
@@ -144,5 +108,44 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </footer>
+
+    <script>
+        // Fetch data from the backend
+        fetch('http://localhost:8080/api/posts')
+            .then(response => response.json())
+            .then(data => {
+                // Process the data and update the UI
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+        // Add event listeners to the buttons
+        document.getElementById('likeBtn').addEventListener('click', function() {
+            // Send a request to the backend to handle the like action
+            console.log('Like button clicked');
+        });
+
+        document.getElementById('commentBtn').addEventListener('click', function() {
+            // Send a request to the backend to handle the comment action
+            console.log('Comment button clicked');
+        });
+
+        document.getElementById('shareBtn').addEventListener('click', function() {
+            // Send a request to the backend to handle the share action
+            console.log('Share button clicked');
+        });
+
+        document.getElementById('bookmarkBtn').addEventListener('click', function() {
+            // Send a request to the backend to handle the bookmark action
+            console.log('Bookmark button clicked');
+        });
+
+        document.getElementById('searchBtn').addEventListener('click', function() {
+            // Perform search functionality
+            console.log('Search button clicked');
+        });
+    </script>
 </body>
 </html>
