@@ -121,30 +121,32 @@
                 console.error('Error:', error);
             });
 
-        // Add event listeners to the buttons
-        document.getElementById('likeBtn').addEventListener('click', function() {
-            // Send a request to the backend to handle the like action
-            console.log('Like button clicked');
-        });
-
-        document.getElementById('commentBtn').addEventListener('click', function() {
-            // Send a request to the backend to handle the comment action
-            console.log('Comment button clicked');
-        });
-
-        document.getElementById('shareBtn').addEventListener('click', function() {
-            // Send a request to the backend to handle the share action
-            console.log('Share button clicked');
-        });
-
-        document.getElementById('bookmarkBtn').addEventListener('click', function() {
-            // Send a request to the backend to handle the bookmark action
-            console.log('Bookmark button clicked');
-        });
-
-        document.getElementById('searchBtn').addEventListener('click', function() {
-            // Perform search functionality
-            console.log('Search button clicked');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add event listeners to the buttons
+            document.getElementById('likeBtn').addEventListener('click', function() {
+                console.log('Like button clicked');
+                // Add your logic here
+            });
+    
+            document.getElementById('commentBtn').addEventListener('click', function() {
+                console.log('Comment button clicked');
+                // Add your logic here
+            });
+    
+            document.getElementById('shareBtn').addEventListener('click', function() {
+                console.log('Share button clicked');
+                // Add your logic here
+            });
+    
+            document.getElementById('bookmarkBtn').addEventListener('click', function() {
+                console.log('Bookmark button clicked');
+                // Add your logic here
+            });
+    
+            document.getElementById('searchBtn').addEventListener('click', function() {
+                console.log('Search button clicked');
+                // Add your logic here
+            });
         });
     </script>
 </body>
