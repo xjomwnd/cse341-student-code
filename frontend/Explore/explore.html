@@ -25,9 +25,26 @@
 
     <main>
         <!-- Add content for exploring social media posts here -->
-        <section>
-            <h2>Explore Posts</h2>
-            <!-- Add post cards, filters, or other exploration elements here -->
+        <section id="post-filters">
+            <!-- Add filters for exploring posts -->
+            <label for="filter-category">Filter by category:</label>
+            <select id="filter-category">
+                <option value="all">All</option>
+                <option value="photos">Photos</option>
+                <option value="videos">Videos</option>
+                <option value="text">Text</option>
+            </select>
+        </section>
+    
+        <section id="post-cards">
+            <!-- Post cards will be dynamically generated here -->
+            <!-- Example post card -->
+            <div class="post-card">
+                <img src="post-image.jpg" alt="Post Image">
+                <h3>Post Title</h3>
+                <p>Post Description</p>
+                <span>Posted by: John Doe</span>
+            </div>
         </section>
     </main>
 
