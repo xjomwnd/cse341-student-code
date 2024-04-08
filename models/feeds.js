@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const express = require('express');
 const router = express.Router();
-const Feed = require('../models/feed');
+const Feed = require('../models/feeds');
 const { authenticateUser } = require('../middleware/authentication');
 
 // Get user's feed
