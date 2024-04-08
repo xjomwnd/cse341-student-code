@@ -24,6 +24,7 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
+    "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^4.3.0",
     "validate": "^5.2.0",
     "validator": "^13.11.0",
