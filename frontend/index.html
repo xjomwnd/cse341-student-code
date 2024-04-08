@@ -19,7 +19,31 @@
             .catch(error => {
                 console.error('Error:', error);
             });
-    </script>    
+    </script>  
+    <script>
+        // Add event listeners to the buttons
+        document.getElementById('likeBtn').addEventListener('click', function() {
+            // Send a request to the backend to handle the like action
+            // You can use AJAX or Fetch API to send the request
+            // Example: fetch('/like', { method: 'POST', ... })
+            console.log('Like button clicked');
+        });
+
+        document.getElementById('commentBtn').addEventListener('click', function() {
+            // Send a request to the backend to handle the comment action
+            console.log('Comment button clicked');
+        });
+
+        document.getElementById('shareBtn').addEventListener('click', function() {
+            // Send a request to the backend to handle the share action
+            console.log('Share button clicked');
+        });
+
+        document.getElementById('bookmarkBtn').addEventListener('click', function() {
+            // Send a request to the backend to handle the bookmark action
+            console.log('Bookmark button clicked');
+        });
+    </script>  
 </head>
 <body>
     <header>
@@ -69,30 +93,6 @@
                     <button>Share</button>
                     <button>Bookmark</button>
                 </div>
-                <script>
-                    // Add event listeners to the buttons
-                    document.getElementById('likeBtn').addEventListener('click', function() {
-                        // Send a request to the backend to handle the like action
-                        // You can use AJAX or Fetch API to send the request
-                        // Example: fetch('/like', { method: 'POST', ... })
-                        console.log('Like button clicked');
-                    });
-            
-                    document.getElementById('commentBtn').addEventListener('click', function() {
-                        // Send a request to the backend to handle the comment action
-                        console.log('Comment button clicked');
-                    });
-            
-                    document.getElementById('shareBtn').addEventListener('click', function() {
-                        // Send a request to the backend to handle the share action
-                        console.log('Share button clicked');
-                    });
-            
-                    document.getElementById('bookmarkBtn').addEventListener('click', function() {
-                        // Send a request to the backend to handle the bookmark action
-                        console.log('Bookmark button clicked');
-                    });
-                </script>
             </div>
         </section>
 
