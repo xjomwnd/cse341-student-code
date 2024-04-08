@@ -56,6 +56,41 @@
                     <button id="commentBtn">Comment</button>
                     <button id="shareBtn">Share</button>
                     <button id="bookmarkBtn">Bookmark</button>
+                    <script>
+                        // Fetch data from the backend
+                        fetch('http://localhost:8080/api/posts')
+                            .then(response => response.json())
+                            .then(data => {
+                                // Process the data and update the UI
+                                console.log(data);
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                            });
+                
+                        document.addEventListener('DOMContentLoaded', function() {
+                            // Add event listeners to the buttons
+                            document.getElementById('likeBtn').addEventListener('click', function() {
+                                console.log('Like button clicked');
+                                // Add your logic here
+                            });
+                    
+                            document.getElementById('commentBtn').addEventListener('click', function() {
+                                console.log('Comment button clicked');
+                                // Add your logic here
+                            });
+                    
+                            document.getElementById('shareBtn').addEventListener('click', function() {
+                                console.log('Share button clicked');
+                                // Add your logic here
+                            });
+                    
+                            document.getElementById('bookmarkBtn').addEventListener('click', function() {
+                                console.log('Bookmark button clicked');
+                                // Add your logic here
+                            });
+                        });
+                    </script>
                 </div>
             </div>
         </section>
@@ -126,81 +161,27 @@
             document.getElementById('likeBtn').addEventListener('click', function() {
                 console.log('Like button clicked');
                 // Add your logic here
-                document.getElementById("addTextForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent default form submission
-  
-  // Retrieve the text input value
-  var text = document.getElementById("textInput").value;
-  
-  // Perform any actions with the entered text (e.g., add it to a list, send it to the server, etc.)
-  
-  // Clear the input field
-  document.getElementById("textInput").value = "";
-});
+                
             });
     
             document.getElementById('commentBtn').addEventListener('click', function() {
                 console.log('Comment button clicked');
                 // Add your logic here
-                document.getElementById("addTextForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent default form submission
-  
-  // Retrieve the text input value
-  var text = document.getElementById("textInput").value;
-  
-  // Perform any actions with the entered text (e.g., add it to a list, send it to the server, etc.)
-  
-  // Clear the input field
-  document.getElementById("textInput").value = "";
-});
             });
     
             document.getElementById('shareBtn').addEventListener('click', function() {
                 console.log('Share button clicked');
                 // Add your logic here
-                document.getElementById("addTextForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent default form submission
-  
-  // Retrieve the text input value
-  var text = document.getElementById("textInput").value;
-  
-  // Perform any actions with the entered text (e.g., add it to a list, send it to the server, etc.)
-  
-  // Clear the input field
-  document.getElementById("textInput").value = "";
-});
             });
     
             document.getElementById('bookmarkBtn').addEventListener('click', function() {
                 console.log('Bookmark button clicked');
                 // Add your logic here
-                document.getElementById("addTextForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent default form submission
-  
-  // Retrieve the text input value
-  var text = document.getElementById("textInput").value;
-  
-  // Perform any actions with the entered text (e.g., add it to a list, send it to the server, etc.)
-  
-  // Clear the input field
-  document.getElementById("textInput").value = "";
-});
             });
     
             document.getElementById('searchBtn').addEventListener('click', function() {
                 console.log('Search button clicked');
                 // Add your logic here
-                document.getElementById("addTextForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent default form submission
-  
-  // Retrieve the text input value
-  var text = document.getElementById("textInput").value;
-  
-  // Perform any actions with the entered text (e.g., add it to a list, send it to the server, etc.)
-  
-  // Clear the input field
-  document.getElementById("textInput").value = "";
-});
             });
         });
     </script>
