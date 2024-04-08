@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 document.addEventListener('DOMContentLoaded', function() {
     // Add event listeners to the buttons
     document.getElementById('likeBtn').addEventListener('click', function() {
