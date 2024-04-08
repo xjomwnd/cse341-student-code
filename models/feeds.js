@@ -1,11 +1,27 @@
-const express = require('express');
-const router = express.Router();
-const Feed = require('../models/feeds');
-const { authenticateUser } = require('../middleware/authentication');
+// authentication.js
 
-// Get user's feed
-router.get('/', authenticateUser, async (req, res) => {
-    // Implement logic to fetch user's feed
-});
+// Sample authentication middleware
+function authenticateUser(req, res, next) {
+    // Check if user is authenticated, for example, by checking if a token is present in the request headers
+    const token = req.headers.authorization;
 
-module.exports = router;
+    if (!token) {
+        return res.status(401).json({ message: "Unauthorized: Missing token" });
+    }
+
+    // Here you might validate the token or perform any other authentication logic
+    // For simplicity, let's assume token validation here
+
+    // For demonstration purposes, let's consider a simple token validation logic
+    if (token !== 'valid_token') {
+        return res.status(401).json({ message: "Unauthorized: Invalid token" });
+    }
+
+    // If the token is valid, proceed to the next middleware or route handler
+    next();
+}
+
+// Export the authentication middleware
+module.exports = {
+    authenticateUser
+};
