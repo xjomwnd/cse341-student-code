@@ -16,5 +16,5 @@ describe('GET /api/posts', () => {
   test('It should respond with an array of posts', async () => {
     const response = await request(app).get('/api/posts');
     expect(Array.isArray(response.body)).toBe(true);
-  });
-
+ 
+});
