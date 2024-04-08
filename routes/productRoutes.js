@@ -84,4 +84,4 @@ async function getProduct(req, res, next) {
   next();
 }
 
-module.exports = route
+module.exports = router
