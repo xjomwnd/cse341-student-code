@@ -31,3 +31,4 @@ function renderPosts(posts) {
          postContainer.appendChild(postElement);
      });
  }
+//
