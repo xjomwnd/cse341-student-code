@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // Fetch data from the backend
 fetch('http://localhost:8080/api/posts')
 .then(response => response.json())
