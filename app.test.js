@@ -17,4 +17,4 @@ describe('GET /api/posts', () => {
     const response = await request(app).get('/api/posts');
     expect(Array.isArray(response.body)).toBe(true);
   });
-});
+
