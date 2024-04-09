@@ -106,9 +106,9 @@ a:hover {
     color: #999;
 }
 .social-picture {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-    border-radius: 50%; /* Makes the picture round */
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    border-radius: 20%; /* Makes the picture round */
     border: 2px solid #fff; /* White border around the picture */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     transition: all 0.3s ease; /* Smooth transition on hover */
