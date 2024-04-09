@@ -11,6 +11,41 @@ header, footer {
     color: #fff;
     padding: 10px;
 }
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    flex: 1; /* to make the logo take remaining space */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
 main {
     padding: 20px;
