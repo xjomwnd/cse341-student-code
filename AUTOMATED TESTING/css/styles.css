@@ -1,24 +1,68 @@
-/* Add your CSS styles here */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-h1 {
+    background-color: #f7f7f7;
     text-align: center;
-    margin-top: 50px;
 }
 
-#result {
-    max-width: 600px;
-    margin: 0 auto;
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.blog-post {
+    background-color: #fff;
+    margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 main {
-    display: flex;
-    justify-content: center;
+    padding: 20px;
+}
+/* Styles for specific elements */
+h1 {
+    margin-top: 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
 }
