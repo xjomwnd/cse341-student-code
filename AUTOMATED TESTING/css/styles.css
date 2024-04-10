@@ -18,3 +18,7 @@ h1 {
     border-radius: 5px;
     margin-top: 20px;
 }
+main {
+    display: flex;
+    justify-content: center;
+}
